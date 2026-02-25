@@ -32,7 +32,23 @@ def load_data():
     return scores, rec, feedback, issues
 
 scores, rec, feedback, issues = load_data()
-data = scores.merge(rec, on="student_id")
+
+# Merge data
+data = scores.merge(rec, on="student_id", how="left")
+
+# Handle duplicate SRI columns
+if "SRI_x" in data.columns:
+    data["SRI"] = data["SRI_x"]
+    data.drop(columns=["SRI_x"], inplace=True)
+
+if "SRI_y" in data.columns:
+    data.drop(columns=["SRI_y"], inplace=True)
+
+# Safety check
+if "SRI" not in data.columns:
+    st.error("SRI column missing after merge")
+    st.write(data.columns)
+    st.stop()
 
 # ----------------------------------
 # PAGE 1: OVERVIEW
