@@ -172,6 +172,68 @@ st.markdown("""
     color: #166534;
 }
 
+/* Risk Status Banner */
+.risk-banner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.risk-banner.high {
+    background: rgba(239,68,68,0.08);
+    border: 1px solid rgba(239,68,68,0.2);
+    color: #b91c1c;
+}
+
+.risk-banner.moderate {
+    background: rgba(245,158,11,0.08);
+    border: 1px solid rgba(245,158,11,0.2);
+    color: #92400e;
+}
+
+.risk-banner.healthy {
+    background: rgba(34,197,94,0.08);
+    border: 1px solid rgba(34,197,94,0.2);
+    color: #166534;
+}
+
+.risk-icon {
+    font-size: 18px;
+}
+
+/* Context Caption */
+.context-caption {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+/* Info Banner */
+.info-banner {
+    background: rgba(59,130,246,0.07);
+    border: 1px solid rgba(59,130,246,0.18);
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #1e3a5f;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.info-banner-icon {
+    font-size: 16px;
+    margin-top: 1px;
+    flex-shrink: 0;
+}
+
 /* System Architecture */
 .arch-grid {
     display: grid;
@@ -268,6 +330,7 @@ if page == "Overview":
     st.markdown("""
     <div class="glass-header">
         <p class="section-title">HEPro AI+ Mentoring Intelligence Dashboard</p>
+        <p class="context-caption">AI-driven early risk detection and mentor allocation system for student success.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -290,6 +353,13 @@ if page == "Overview":
     kpi(col2, "High Risk Students", high_risk)
     kpi(col3, "Mentors Assigned", mentors)
     kpi(col4, "Matching Issues", issue_count)
+
+    st.markdown("""
+    <div class="info-banner">
+        <span class="info-banner-icon">ℹ️</span>
+        <span>HEPro AI+ identifies at-risk students early and assigns optimal mentors using hybrid AI — combining machine learning clustering, cosine similarity matching, and a rule-based intervention engine.</span>
+    </div>
+    """, unsafe_allow_html=True)
 
     st.write("")
 
@@ -317,6 +387,7 @@ elif page == "Student Analysis":
     st.markdown("""
     <div class="glass-header">
         <p class="section-title">Student Insight Panel</p>
+        <p class="context-caption">Individual student performance scores, AI-assigned mentor, risk classification, and recommended intervention.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -360,6 +431,21 @@ elif page == "Student Analysis":
     </div>
     """, unsafe_allow_html=True)
 
+    # Risk Status Banner
+    if sri_val < 50:
+        risk_class, risk_icon, risk_label = "high", "🔴", "High Risk Student — Immediate intervention recommended."
+    elif sri_val < 65:
+        risk_class, risk_icon, risk_label = "moderate", "🟡", "Moderate Risk Student — Monitor closely and consider early support."
+    else:
+        risk_class, risk_icon, risk_label = "healthy", "🟢", "Healthy Student — On track. Continue regular check-ins."
+
+    st.markdown(f"""
+    <div class="risk-banner {risk_class}">
+        <span class="risk-icon">{risk_icon}</span>
+        <span>{risk_label} &nbsp;|&nbsp; SRI Score: <strong>{sri_val}</strong></span>
+    </div>
+    """, unsafe_allow_html=True)
+
 # ----------------------------------
 # PAGE 3: FEEDBACK
 # ----------------------------------
@@ -368,6 +454,7 @@ elif page == "Feedback Monitoring":
     st.markdown("""
     <div class="glass-header">
         <p class="section-title">Feedback & Continuous Learning</p>
+        <p class="context-caption">Tracking SRI improvement trends, mentor effectiveness ratings, and flagged matching issues.</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -400,6 +487,14 @@ elif page == "System Info":
     st.markdown("""
     <div class="glass-header">
         <p class="section-title">System Architecture</p>
+        <p class="context-caption">End-to-end ML pipeline: scoring → segmentation → matching → intervention → feedback learning.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div class="info-banner">
+        <span class="info-banner-icon">⚙️</span>
+        <span>This system combines rule-based scoring, unsupervised ML clustering, cosine similarity mentor matching, and a feedback-driven continuous learning loop — designed as a production-grade AI mentoring engine.</span>
     </div>
     """, unsafe_allow_html=True)
 
