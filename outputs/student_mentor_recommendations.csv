@@ -1,0 +1,51 @@
+student_id,Cluster_Label,SRI,Assigned_Mentor,Matching_Score,Recommended_Intervention,Alert_Status
+S001,At-Risk Students,60.77,Mentor_18,1.133,Immediate Academic & Wellness Intervention,Monitor Closely
+S002,High Performers,75.17,Mentor_1,1.015,Advanced Growth & Leadership Coaching,Stable
+S003,Career-Confused Students,55.87,Mentor_7,0.996,Career Planning & Skill Alignment,Stable
+S004,High Performers,64.04,Mentor_7,1.005,Advanced Growth & Leadership Coaching,Stable
+S005,Career-Confused Students,55.18,Mentor_5,1.025,Career Planning & Skill Alignment,Stable
+S006,At-Risk Students,53.89,Mentor_10,1.112,Immediate Academic & Wellness Intervention,Monitor Closely
+S007,High Performers,67.57,Mentor_1,1.1,Advanced Growth & Leadership Coaching,Stable
+S008,High Performers,73.61,Mentor_7,1.056,Advanced Growth & Leadership Coaching,Stable
+S009,High Performers,73.75,Mentor_7,1.087,Advanced Growth & Leadership Coaching,Stable
+S010,Career-Confused Students,71.02,Mentor_7,1.022,Career Planning & Skill Alignment,Stable
+S011,Career-Confused Students,64.01,Mentor_17,1.112,Career Planning & Skill Alignment,Stable
+S012,At-Risk Students,52.25,Mentor_18,1.073,Immediate Academic & Wellness Intervention,Monitor Closely
+S013,At-Risk Students,47.54,Mentor_18,1.078,Immediate Academic & Wellness Intervention,⚠ HIGH RISK ALERT
+S014,At-Risk Students,59.12,Mentor_10,1.084,Immediate Academic & Wellness Intervention,Monitor Closely
+S015,High Performers,67.35,Mentor_1,1.022,Advanced Growth & Leadership Coaching,Stable
+S016,Career-Confused Students,58.6,Mentor_7,1.062,Career Planning & Skill Alignment,Stable
+S017,At-Risk Students,58.66,Mentor_4,1.029,Immediate Academic & Wellness Intervention,Monitor Closely
+S018,At-Risk Students,53.13,Mentor_18,1.01,Immediate Academic & Wellness Intervention,Monitor Closely
+S019,At-Risk Students,52.26,Mentor_4,0.964,Immediate Academic & Wellness Intervention,Monitor Closely
+S020,Career-Confused Students,62.09,Mentor_17,1.1,Career Planning & Skill Alignment,Stable
+S021,At-Risk Students,54.36,Mentor_4,0.963,Immediate Academic & Wellness Intervention,Monitor Closely
+S022,Career-Confused Students,60.09,Mentor_17,0.952,Career Planning & Skill Alignment,Stable
+S023,High Performers,71.03,Mentor_13,0.982,Advanced Growth & Leadership Coaching,Stable
+S024,At-Risk Students,43.02,Mentor_10,1.245,Immediate Academic & Wellness Intervention,⚠ HIGH RISK ALERT
+S025,High Performers,65.27,Mentor_1,1.062,Advanced Growth & Leadership Coaching,Stable
+S026,High Performers,68.54,Mentor_1,1.058,Advanced Growth & Leadership Coaching,Stable
+S027,At-Risk Students,55.18,Mentor_10,1.003,Immediate Academic & Wellness Intervention,Monitor Closely
+S028,High Performers,69.24,Mentor_13,1.085,Advanced Growth & Leadership Coaching,Stable
+S029,At-Risk Students,62.11,Mentor_5,1.014,Immediate Academic & Wellness Intervention,Monitor Closely
+S030,At-Risk Students,55.34,Mentor_4,1.052,Immediate Academic & Wellness Intervention,Monitor Closely
+S031,Career-Confused Students,57.55,Mentor_5,1.03,Career Planning & Skill Alignment,Stable
+S032,High Performers,64.76,Mentor_1,0.917,Advanced Growth & Leadership Coaching,Stable
+S033,Career-Confused Students,60.97,Mentor_5,1.066,Career Planning & Skill Alignment,Stable
+S034,Career-Confused Students,58.92,Mentor_5,1.034,Career Planning & Skill Alignment,Stable
+S035,Career-Confused Students,65.66,Mentor_2,1.008,Career Planning & Skill Alignment,Stable
+S036,High Performers,68.2,Mentor_1,1.048,Advanced Growth & Leadership Coaching,Stable
+S037,High Performers,77.8,Mentor_1,1.088,Advanced Growth & Leadership Coaching,Stable
+S038,At-Risk Students,56.11,Mentor_10,1.159,Immediate Academic & Wellness Intervention,Monitor Closely
+S039,High Performers,66.54,Mentor_1,1.024,Advanced Growth & Leadership Coaching,Stable
+S040,High Performers,63.43,Mentor_14,0.981,Advanced Growth & Leadership Coaching,Stable
+S041,Career-Confused Students,53.67,Mentor_17,0.973,Career Planning & Skill Alignment,Stable
+S042,At-Risk Students,59.97,Mentor_14,0.955,Immediate Academic & Wellness Intervention,Monitor Closely
+S043,Career-Confused Students,66.27,Mentor_4,1.035,Career Planning & Skill Alignment,Stable
+S044,High Performers,69.59,Mentor_14,1.1,Advanced Growth & Leadership Coaching,Stable
+S045,At-Risk Students,60.39,Mentor_10,1.06,Immediate Academic & Wellness Intervention,Monitor Closely
+S046,At-Risk Students,60.26,Mentor_14,0.981,Immediate Academic & Wellness Intervention,Monitor Closely
+S047,At-Risk Students,45.42,Mentor_4,0.974,Immediate Academic & Wellness Intervention,⚠ HIGH RISK ALERT
+S048,Career-Confused Students,61.88,Mentor_4,1.043,Career Planning & Skill Alignment,Stable
+S049,At-Risk Students,52.29,Mentor_4,0.971,Immediate Academic & Wellness Intervention,Monitor Closely
+S050,Career-Confused Students,52.95,Mentor_4,1.13,Career Planning & Skill Alignment,Stable

@@ -1,0 +1,12 @@
+student_id,mentor_name,cluster,matching_score,sri_improvement,mentor_rating,issue
+S002,Mentor_1,High Performers,1.015,1.0,2,Low effectiveness – review matching weights
+S004,Mentor_7,High Performers,1.005,1.0,2,Low effectiveness – review matching weights
+S008,Mentor_7,High Performers,1.056,1.0,2,Low effectiveness – review matching weights
+S020,Mentor_17,Career-Confused Students,1.1,2.0,2,Low effectiveness – review matching weights
+S026,Mentor_1,High Performers,1.058,2.0,2,Low effectiveness – review matching weights
+S028,Mentor_13,High Performers,1.085,1.0,2,Low effectiveness – review matching weights
+S033,Mentor_5,Career-Confused Students,1.066,2.0,2,Low effectiveness – review matching weights
+S036,Mentor_1,High Performers,1.048,2.0,2,Low effectiveness – review matching weights
+S040,Mentor_14,High Performers,0.981,2.000000000000007,2,Low effectiveness – review matching weights
+S044,Mentor_14,High Performers,1.1,2.0,2,Low effectiveness – review matching weights
+S048,Mentor_4,Career-Confused Students,1.043,2.999999999999993,3,Low effectiveness – review matching weights

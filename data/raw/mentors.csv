@@ -1,0 +1,19 @@
+mentor_id,mentor_name,expertise_domain,specialization,mentoring_style,experience_years,availability_hours_per_week,max_students,current_load
+M001,Mentor_1,Career,Interview Preparation,Structured,13,13,10,1
+M002,Mentor_2,Career,Resume Building,Strategic,10,10,9,2
+M003,Mentor_3,Wellness,Work-Life Balance,Supportive,10,17,11,1
+M004,Mentor_4,Academic,Mathematics,Supportive,8,18,14,0
+M005,Mentor_5,Career,Resume Building,Strategic,12,17,8,3
+M006,Mentor_6,Career,Interview Preparation,Structured,5,10,8,4
+M007,Mentor_7,Academic,Computer Science,Structured,14,19,7,1
+M008,Mentor_8,Academic,Computer Science,Structured,4,9,12,3
+M009,Mentor_9,Academic,Data Science,Supportive,3,9,7,3
+M010,Mentor_10,Wellness,Mental Health,Supportive,15,20,7,1
+M011,Mentor_11,Wellness,Mental Health,Supportive,6,19,13,5
+M012,Mentor_12,Career,Interview Preparation,Structured,10,10,7,4
+M013,Mentor_13,Wellness,Stress Management,Structured,11,18,6,0
+M014,Mentor_14,Career,Software Engineering,Structured,14,13,13,2
+M015,Mentor_15,Career,Software Engineering,Strategic,5,6,10,1
+M016,Mentor_16,Career,Industry Readiness,Structured,14,12,14,3
+M017,Mentor_17,Wellness,Stress Management,Strategic,9,19,13,4
+M018,Mentor_18,Career,Interview Preparation,Supportive,13,8,6,2
