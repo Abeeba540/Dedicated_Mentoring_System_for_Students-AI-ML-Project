@@ -1,60 +1,75 @@
-🎓 Dedicated Mentoring System for Students (HEPro AI+)
-AI-Driven Student Intelligence for Early Risk Detection & Personalized Mentor Allocation
-📌 Project Overview
+# 🎓 Dedicated Mentoring System for Students (HEPro AI+)
 
-Educational institutions often struggle to identify students who need support at the right time. Traditional mentoring systems rely on manual monitoring and do not consider multiple behavioral factors.
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![ML](https://img.shields.io/badge/ML-scikit--learn-orange)
+![Dashboard](https://img.shields.io/badge/Dashboard-Streamlit-red)
+![Project](https://img.shields.io/badge/Type-End--to--End%20ML-blue)
 
-This project builds an AI-powered mentoring intelligence system that:
+## 🎯 Overview
 
-Evaluates students across academic, wellbeing, productivity, and career dimensions
+**HEPro AI+** is an end-to-end AI system designed to identify student risks early and enable **personalized mentoring decisions** using data.
 
-Calculates a Student Readiness Index (SRI)
+Traditional mentoring systems focus only on academic performance and are reactive. This project builds a **data-driven mentoring intelligence platform** that:
 
-Segments students using K-Means clustering
+* Evaluates students across **academic, wellbeing, productivity, and career dimensions**
+* Calculates a unified **Student Readiness Index (SRI)**
+* Segments students using **K-Means clustering**
+* Matches mentors using **cosine similarity**
+* Generates **intervention recommendations**
+* Tracks **post-mentoring improvement**
+* Provides a **live interactive dashboard**
 
-Assigns mentors using cosine similarity
+🌐 **Live Application**
+[https://dedicatedmentoringsystemforstudents-ai-ml-project-hhw9jxeyqlfs.streamlit.app/](https://dedicatedmentoringsystemforstudents-ai-ml-project-hhw9jxeyqlfs.streamlit.app/)
 
-Provides intervention recommendations
+---
 
-Tracks feedback and improvement
+## 🚀 Key Capabilities
 
-Offers a live Streamlit dashboard
+* Multi-dimensional student evaluation
+* Rule-based scoring system (APS, WWS, PTMS, CRS)
+* Student Readiness Index (SRI)
+* Risk classification (Green / Blue / Yellow / Red)
+* Student segmentation using Machine Learning
+* Cosine similarity-based mentor matching
+* Capacity-aware mentor allocation
+* Feedback loop for performance improvement
+* Matching issue detection
+* Streamlit decision-support dashboard
 
-🔗 Live App
-https://dedicatedmentoringsystemforstudents-ai-ml-project-hhw9jxeyqlfs.streamlit.app/
+---
 
-🧠 Key Features
+## 📊 System Performance
 
-Multi-dimensional student evaluation
+| Metric               | Value     |
+| -------------------- | --------- |
+| Students Analyzed    | 50        |
+| Clusters             | 3         |
+| At-Risk Students     | 19        |
+| High Performers      | 16        |
+| Career-Confused      | 15        |
+| Matching Score Range | 0.9 – 1.2 |
+| Deployment           | ✅ Live    |
 
-Rule-based scoring system (APS, WWS, PTMS, CRS)
+---
 
-Student Readiness Index (SRI)
+## 🏗️ Project Structure
 
-Behavioral segmentation using Machine Learning
-
-Cosine similarity-based mentor matching
-
-Intervention recommendation engine
-
-Feedback monitoring & matching issue detection
-
-Interactive Streamlit dashboard
-
-📂 Project Structure
-Dedicated Mentoring System for Students
+```
+Dedicated_Mentoring_System/
 │
 ├── app/
-│   └── app.py                      # Streamlit dashboard application
+│   └── app.py                          # Streamlit dashboard
 │
 ├── data/
 │   ├── raw/
-│   │   ├── students.csv            # Raw student dataset
-│   │   └── mentors.csv             # Mentor information dataset
+│   │   ├── students.csv                # Generated student dataset
+│   │   └── mentors.csv                 # Mentor information
 │   │
 │   └── processed/
-│       ├── students_with_scores.csv
-│       └── students_with_clusters.csv
+│       ├── students_with_scores.csv    # APS, WWS, PTMS, CRS, SRI
+│       └── students_with_clusters.csv  # Cluster labels
 │
 ├── notebooks/
 │   ├── Student_dataset_generation.ipynb
@@ -70,7 +85,7 @@ Dedicated Mentoring System for Students
 │   └── matching_issues.csv
 │
 ├── src/
-│   └── feedback_loop.py            # Continuous learning logic
+│   └── feedback_loop.py
 │
 ├── docs/
 │   ├── HEPro AIML Internship Project Report.pdf
@@ -83,282 +98,274 @@ Dedicated Mentoring System for Students
 │
 ├── requirements.txt
 └── README.md
-🔄 End-to-End Workflow
+```
 
-Generate student dataset
+---
 
-Identify behavioral patterns
+## 🔄 End-to-End Workflow
 
-Calculate performance scores
-
-Compute Student Readiness Index (SRI)
-
-Segment students using K-Means
-
-Match mentors using cosine similarity
-
-Recommend interventions
-
-Track feedback and improvement
-
-Visualize everything in Streamlit
-
-📊 Dataset Description
+```
 Student Data
+    ↓
+Feature Engineering
+    ↓
+Rule-Based Scoring (APS, WWS, PTMS, CRS)
+    ↓
+Student Readiness Index (SRI)
+    ↓
+K-Means Clustering (K = 3)
+    ↓
+Cosine Similarity Mentor Matching
+    ↓
+Intervention Recommendation
+    ↓
+Feedback Loop & Issue Detection
+    ↓
+Streamlit Dashboard
+```
 
-Includes:
+---
 
-GPA, attendance, assignments
+## 🧮 Scoring Framework
 
-Stress level, sleep hours, mental wellbeing
+### Composite Scores
 
-Productivity, distractions
+| Score | Description                    |
+| ----- | ------------------------------ |
+| APS   | Academic Performance           |
+| WWS   | Wellness & Wellbeing           |
+| PTMS  | Productivity & Time Management |
+| CRS   | Career Readiness               |
 
-Career clarity, skill readiness
+### Student Readiness Index
 
-Engagement score
-
-Mentor Data
-
-Includes:
-
-Expertise domain (Academic / Wellness / Career)
-
-Mentoring style
-
-Availability
-
-Capacity
-
-Synthetic data is generated to simulate realistic student behavior patterns.
-
-📓 Notebooks Explanation
-1. Student_dataset_generation.ipynb
-
-Purpose
-
-Generate synthetic dataset of 50 students
-
-Why used
-
-Real student data is sensitive
-
-Allows realistic simulation for ML development
-
-What it does
-
-Creates academic, wellbeing, productivity, and career attributes
-
-Saves students.csv
-
-2. Patterns_identification.ipynb
-
-Purpose
-
-Identify important behavioral patterns
-
-Why used
-
-Understand relationships before modeling
-
-Patterns identified
-
-High stress + low productivity
-
-Low GPA + high engagement
-
-Strong academics but low career clarity
-
-This supports feature design and cluster interpretation.
-
-3. Student_Scoring_System_(Rule_Based_Intelligence).ipynb
-
-Purpose
-
-Convert raw data into meaningful performance scores
-
-Scores calculated
-
-Score	Meaning
-APS	Academic Performance
-WWS	Wellness & Wellbeing
-PTMS	Productivity
-CRS	Career Readiness
-
-Final Metric
-
+```
 SRI = 0.30*APS + 0.25*WWS + 0.20*PTMS + 0.25*CRS
+```
 
-Also classifies students into:
+### Risk Levels
 
-Green
+| SRI   | Category                |
+| ----- | ----------------------- |
+| ≥ 75  | Green (High Performing) |
+| 60–74 | Blue (Stable)           |
+| 45–59 | Yellow (Needs Support)  |
+| < 45  | Red (High Risk)         |
 
-Blue
+---
 
-Yellow
+## 🤖 Machine Learning
 
-Red
+### Student Segmentation
 
-Output: students_with_scores.csv
+* Algorithm: **K-Means**
+* K = 3
+* Features: APS, WWS, PTMS, CRS, SRI
+* Scaling: StandardScaler
 
-4. Mentor_Student_matching_logic.ipynb
+**Cluster Interpretation**
 
-Purpose
+| Cluster         | Meaning                                 |
+| --------------- | --------------------------------------- |
+| At-Risk         | Low productivity / moderate wellbeing   |
+| High Performers | Strong across all dimensions            |
+| Career-Confused | Good academics but low career readiness |
 
-Segment students
+---
 
-Assign mentors
+## 🎯 Mentor Matching
 
-Steps
-
-StandardScaler applied
-
-K-Means (K=3) clustering
-
-Cluster labels:
-
-At-Risk Students
-
-High Performers
-
-Career-Confused
-
-Cosine Similarity Matching
+### Method: Cosine Similarity
 
 Student vector:
 
+```
 [APS, WWS, PTMS, CRS]
+```
 
-Mentor vectors based on domain expertise.
+Mentor vectors represent expertise domains:
 
-Final Score
+* Academic
+* Wellness
+* Career
 
-Similarity + Style Bonus + Availability Weight
+### Final Matching Score
 
-Output:
-student_mentor_recommendations.csv
+```
+Cosine Similarity
++ Style Compatibility Bonus
++ Availability Weight
+```
 
-🔁 Feedback System
-feedback_loop.py
+Constraints:
 
-Purpose
+* Capacity control
+* Load balancing
 
-Simulate post-mentoring improvement
+Output: `student_mentor_recommendations.csv`
 
-What it does
+---
 
-Calculates SRI improvement
+## 🔁 Feedback System
 
-Records mentor ratings
+**src/feedback_loop.py**
 
-Flags issues when:
+Purpose:
 
-Low improvement
+* Simulate post-mentoring improvement
+* Calculate SRI change
+* Record mentor ratings
+* Detect poor matches
 
-Low rating
+Flags cases where:
 
-Poor match
+* SRI improvement < 3
+* Mentor rating ≤ 2
+* Matching score is low
 
 Outputs:
 
-mentor_feedback.csv
+* mentor_feedback.csv
+* matching_issues.csv
 
-matching_issues.csv
+---
 
-This enables continuous system learning.
+## 📓 Notebooks (What & Why)
 
-📄 Documentation (docs folder)
-Document	Purpose
-Project Report	Complete system explanation
-Data Dictionary	Field definitions
-Scoring Logic	Weight calculations and thresholds
-Cluster Interpretation	Meaning of each cluster
-Dataset Behavior	Why data reflects real students
-Mentor Matching System	Matching workflow
-Cluster Recommendations	Intervention strategy per cluster
+### Student_dataset_generation.ipynb
 
-These documents support transparency and explainability.
+Generates synthetic student data to simulate real educational behavior. Used because real student data is sensitive.
 
-🌐 Streamlit Dashboard
+### Patterns_identification.ipynb
 
-app.py
+Explores behavioral relationships such as stress vs productivity and academic vs career trends. Helps in feature understanding.
+
+### Student_Scoring_System_(Rule_Based_Intelligence).ipynb
+
+Implements rule-based formulas to calculate APS, WWS, PTMS, CRS and SRI. Produces processed scoring dataset.
+
+### Mentor_Student_matching_logic.ipynb
+
+Performs clustering, assigns cluster labels, and implements cosine similarity mentor matching.
+
+---
+
+## 📄 Documentation (docs folder)
+
+| Document                | Purpose                                  |
+| ----------------------- | ---------------------------------------- |
+| Project Report          | Complete system design and results       |
+| Data Dictionary         | Field definitions                        |
+| Scoring Logic           | Feature weights and thresholds           |
+| Cluster Interpretation  | Behavioral meaning of clusters           |
+| Dataset Behavior        | Justification for synthetic data realism |
+| Matching System         | End-to-end matching workflow             |
+| Cluster Recommendations | Intervention strategy per segment        |
+
+These ensure **full explainability and auditability**.
+
+---
+
+## 🌐 Streamlit Dashboard
 
 Modules:
 
-Overview
+**Overview**
 
-Total students
+* Total students
+* Risk distribution
+* Cluster distribution
+* SRI histogram
 
-Risk distribution
+**Student Analysis**
 
-Cluster distribution
+* Individual scores
+* Cluster label
+* Assigned mentor
+* Matching score
+* Intervention
 
-SRI histogram
+**Feedback Monitoring**
 
-Student Analysis
+* SRI improvement
+* Mentor ratings
+* Matching issues
 
-Individual scores
+---
 
-Cluster
+## ⚙️ Technologies
 
-Assigned mentor
+| Category      | Tools         |
+| ------------- | ------------- |
+| Language      | Python        |
+| Data          | Pandas, NumPy |
+| ML            | Scikit-learn  |
+| Visualization | Plotly        |
+| Dashboard     | Streamlit     |
 
-Intervention
+---
 
-Risk status
+## 🚀 Quick Start
 
-Feedback Monitoring
+### 1. Clone Repository
 
-SRI improvement
-
-Mentor ratings
-
-Matching issues
-
-System Info
-
-End-to-end architecture
-
-⚙️ Technologies Used
-
-Python
-
-Pandas, NumPy
-
-Scikit-learn
-
-Plotly
-
-Streamlit
-
-🚀 How to Run Locally
-1. Clone Repository
+```
 git clone <your-repo-link>
-cd Dedicated-Mentoring-System
-2. Install Requirements
+cd Dedicated_Mentoring_System
+```
+
+### 2. Install Dependencies
+
+```
 pip install -r requirements.txt
-3. Run Dashboard
+```
+
+### 3. Run Application
+
+```
 streamlit run app/app.py
-📈 Machine Learning Summary
-Component	Method
-Scaling	StandardScaler
-Clustering	K-Means (K=3)
-Matching	Cosine Similarity
-Decision	Rule-based
-Learning	Feedback loop
-⚠️ Limitations
+```
 
-Synthetic dataset
+---
 
-Simulated feedback
+## ⚠️ Assumptions & Limitations
 
-Fixed cluster count
+* Synthetic dataset
+* Simulated feedback
+* Fixed cluster size (K = 3)
+* No real-time LMS integration
 
-No real-time LMS integration
+---
 
-👩‍💻 Author
+## 👩‍💻 Author
 
-Ummu Abeeba.S
+**Ummu Abeeba.S**
 
-Project Status: Completed
-Deployment: Live on Streamlit
+
+GitHub: [https://github.com/Abeeba540](https://github.com/Abeeba540)
+
+---
+
+## 📚 References
+
+* Hands-On Machine Learning – Aurélien Géron
+* Pattern Recognition and Machine Learning – Christopher Bishop
+* Recommender Systems – Charu Aggarwal
+* Educational Data Mining – Baker & Inventado
+* HEPro AI Internship Materials
+
+---
+
+## 🏁 Project Status
+
+| Phase                    | Status     |
+| ------------------------ | ---------- |
+| Dataset & Feature Design | ✅ Complete |
+| Rule-Based Scoring       | ✅ Complete |
+| Machine Learning         | ✅ Complete |
+| Mentor Matching          | ✅ Complete |
+| Feedback System          | ✅ Complete |
+| Dashboard                | ✅ Live     |
+
+**Overall Status:** ✅ End-to-End System Completed
+
