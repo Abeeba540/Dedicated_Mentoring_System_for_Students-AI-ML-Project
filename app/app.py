@@ -329,7 +329,7 @@ if page == "Overview":
 
     st.markdown("""
     <div class="glass-header">
-        <p class="section-title">HEPro AI+ Mentoring Intelligence Dashboard</p>
+        <p class="section-title">Dedicated AI+ Mentoring Intelligence Dashboard</p>
         <p class="context-caption">AI-driven early risk detection and mentor allocation system for student success.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -357,7 +357,7 @@ if page == "Overview":
     st.markdown("""
     <div class="info-banner">
         <span class="info-banner-icon">ℹ️</span>
-        <span>HEPro AI+ identifies at-risk students early and assigns optimal mentors using hybrid AI — combining machine learning clustering, cosine similarity matching, and a rule-based intervention engine.</span>
+        <span>Dedicated AI+ identifies at-risk students early and assigns optimal mentors using hybrid AI — combining machine learning clustering, cosine similarity matching, and a rule-based intervention engine.</span>
     </div>
     """, unsafe_allow_html=True)
 
