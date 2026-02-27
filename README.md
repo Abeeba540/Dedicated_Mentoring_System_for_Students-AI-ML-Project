@@ -162,6 +162,7 @@ SRI = 0.30*APS + 0.25*WWS + 0.20*PTMS + 0.25*CRS
 * K = 3
 * Features: APS, WWS, PTMS, CRS, SRI
 * Scaling: StandardScaler
+<img width="436" height="256" alt="image" src="https://github.com/user-attachments/assets/9de6bc46-584c-4ab0-b2ac-f73f8ad9afd8" />
 
 **Cluster Interpretation**
 
@@ -170,6 +171,7 @@ SRI = 0.30*APS + 0.25*WWS + 0.20*PTMS + 0.25*CRS
 | At-Risk         | Low productivity / moderate wellbeing   |
 | High Performers | Strong across all dimensions            |
 | Career-Confused | Good academics but low career readiness |
+<img width="442" height="256" alt="image" src="https://github.com/user-attachments/assets/b78d8ec9-f482-4d9d-a1c3-07c9a97090bf" />
 
 ---
 
@@ -227,6 +229,7 @@ Outputs:
 
 * mentor_feedback.csv
 * matching_issues.csv
+
 
 ---
 
@@ -290,7 +293,7 @@ Modules:
 * SRI improvement
 * Mentor ratings
 * Matching issues
-
+<img width="2400" height="3800" alt="kxw4du99q6dto14" src="https://github.com/user-attachments/assets/6c01d12f-2d77-400f-b7fc-9b377aa63d83" />
 ---
 
 ## ⚙️ Technologies
